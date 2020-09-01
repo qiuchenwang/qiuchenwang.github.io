@@ -18,7 +18,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2020/8 - Laputa&#39;s Blog</title>
+  <title>归档：2020/8 - Laputa&#39;s blog</title>
   
 
   
@@ -27,6 +27,14 @@
   
 
   <!-- import meta -->
+  
+    
+      <meta name="msapplication-TileColor" content="#ffffff">
+    
+      <meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/browserconfig.xml">
+    
+      <meta name="theme-color" content="#ffffff">
+    
   
 
   <!-- link -->
@@ -45,14 +53,20 @@
   
 
   
-    <link rel="shortcut icon" type='image/x-icon' href="http://i2.tiimg.com/726078/1f6657bf6f4f5e9a.jpg">
-  
 
   
 
   
 
   <!-- import link -->
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/site.webmanifest">
+  <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon.ico">
   
 
   
@@ -452,7 +466,7 @@
   
     
     <h2 class="article-title" >
-      <a href="/2020/08/29/%E5%85%BB%E7%8C%AA%E7%A2%8E%E7%A2%8E%E5%BF%B5/">
+      <a href="/%E5%85%BB%E7%8C%AA%E7%A2%8E%E7%A2%8E%E5%BF%B5/">
         养猪碎碎念
       </a>
     </h2>
@@ -476,7 +490,7 @@
       </div>
       
         <div>
-            <a class='readmore' href='/2020/08/29/%E5%85%BB%E7%8C%AA%E7%A2%8E%E7%A2%8E%E5%BF%B5/'>
+            <a class='readmore' href='/%E5%85%BB%E7%8C%AA%E7%A2%8E%E7%A2%8E%E5%BF%B5/'>
             阅读全文
           </a>
         </div>
@@ -498,7 +512,7 @@
   
     
     <h2 class="article-title" >
-      <a href="/2020/08/29/hello-world/">
+      <a href="/hello-world/">
         Hello World
       </a>
     </h2>
@@ -519,7 +533,7 @@ Qu...
       </div>
       
         <div>
-            <a class='readmore' href='/2020/08/29/hello-world/'>
+            <a class='readmore' href='/hello-world/'>
             阅读全文
           </a>
         </div>
@@ -561,7 +575,7 @@ Qu...
         
         
         
-          <p><span id="jinrishici-sentence">Laputa's Blog</span></p>
+          <p><span id="jinrishici-sentence">Laputa's blog</span></p>
           <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
         
       </div>
@@ -746,7 +760,7 @@ Qu...
       
     
       
-        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+        <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener external nofollow noreferrer">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
       
     
@@ -773,7 +787,7 @@ Qu...
   </footer>
 
 
-      <a class="s-top fad fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+      <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
     </div>
   </div>
   <div>
@@ -815,7 +829,7 @@ Qu...
       $(this).wrap(bgDiv); // 背景层
       $(this).wrap(element);  // 最后套 a 标签
     })
-    $(".md").find("img").fancybox({
+    $(".article-entry").find("img").fancybox({
       selector: '[data-fancybox="images"]',
       hash: false,
       loop: false,
@@ -836,7 +850,6 @@ Qu...
 
 
 <!-- internal -->
-
 
 
 
@@ -1151,7 +1164,7 @@ Qu...
       // 请求 PV 并自增
       var pvCtn = document.querySelector('#lc-sv');
       if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'http://yoursite.com' + '/#lc-sv', 'Visits').then((record) => {
+        var pvGetter = this.getRecord(Counter, 'https://volantis.js.org' + '/#lc-sv', 'Visits').then((record) => {
           incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-sv #number');
           if (eles.length > 0) {
@@ -1169,7 +1182,7 @@ Qu...
       // 请求 UV 并自增
       var uvCtn = document.querySelector('#lc-uv');
       if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'http://yoursite.com' + '/#lc-uv', 'Visitors').then((record) => {
+        var uvGetter = this.getRecord(Counter, 'https://volantis.js.org' + '/#lc-uv', 'Visitors').then((record) => {
           var vuv = this.validUV();
           vuv && incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-uv #number');
@@ -1191,7 +1204,7 @@ Qu...
         for (i = 0; i < allPV.length; i++) {
           let pv = allPV[i];
           let title = pv.getAttribute('data-title');
-          var url = 'http://yoursite.com' + pv.getAttribute('data-path');
+          var url = 'https://volantis.js.org' + pv.getAttribute('data-path');
           if (url) {
             var viewGetter = this.getRecord(Counter, url, title).then((record) => {
               // 是当前页面就自增
